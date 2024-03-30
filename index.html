@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Proyek Akhir</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <div class="wrapper">
+      <div class="formContent" id="add-todo">
+        <form id="formDataBuku">
+          <h2 class="datadiri">Masukkan Buku Baru</h2>
+          <div class="form-element">
+            <label for="inputNama">Judul :</label><br />
+            <input
+              id="inputNama"
+              type="text"
+              name="inputNama"
+              placeholder="Judul Buku"
+              required
+            /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="inputPenulis">Penulis:</label><br />
+            <input
+              id="inputPenulis"
+              type="text"
+              name="inputPenulis"
+              placeholder="Nama Penulis"
+              required
+            /><br />
+          </div>
+          <div class="form-element">
+            <label for="inputTahun">Tahun :</label><br />
+            <input
+              id="inputTahun"
+              type="number"
+              name="inputTahun"
+              placeholder="Tahun"
+              required
+            /><br />
+          </div>
+          <div class="form-element">
+            <label for="inputBaca">Sudah dibaca </label>
+            <input
+              id="inputBaca"
+              type="checkbox"
+              name="tahun"
+              placeholder="Tahun"
+            /><br />
+          </div>
+          <button id="submit" type="submit">
+            Masukkan Buku ke rak <span>Belum selesai dibaca</span>
+          </button>
+        </form>
+      </div>
+      <div class="formContent">
+        <!-- Form untuk melakukan pencarian -->
+        <h2 class="datadiri">Cari Buku (Opsional)</h2>
+        <div class="form-element">
+          <label for="searchInput">Judul :</label><br />
+          <input id="searchInput" type="text" placeholder="Judul Buku" />
+        </div>
+        <button id="searchButton">Cari</button>
+      </div>
+
+      <section class="book_shelf">
+        <h2>Belum selesai dibaca</h2>
+        <div id="incompleteBookshelfList" class="book_list">
+          <div class="list-item" id="todos"></div>
+        </div>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book_list">
+          <div class="list-item" id="completed-todos"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

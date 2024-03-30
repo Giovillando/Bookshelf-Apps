@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flow-root;
+}
+
+header {
+  background: #5f30e2;
+  padding: 0.2%;
+  color: white;
+  text-align: center;
+}
+
+.wrapper h2 {
+  font-size: large;
+}
+
+.wrapper h2.datadiri {
+  text-align: center;
+}
+
+.wrapper h2.buku {
+  text-align: justify;
+}
+
+.wrapper {
+  flex-direction: column;
+  align-items: justify;
+  color: blue;
+  margin: 30px;
+}
+
+.formContent {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.form-element {
+  font-size: small;
+  text-align: justify;
+}
+input[type="checkbox"] {
+  width: 20px; /* Lebar checkbox */
+  height: 18px; /* Tinggi checkbox */
+  vertical-align: middle; /* Mengatur posisi vertikal di tengah */
+}
+
+.form-elemen {
+  font-size: small;
+  text-align: justify;
+}
+
+input {
+  width: 100cm;
+  border: 1px solid black;
+  height: 50px;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+button {
+  background-color: #88bfff; /* Warna latar belakang */
+  color: rgb(0, 0, 0); /* Warna teks */
+  padding: 10px 20px; /* Padding tombol */
+  border: none; /* Menghilangkan border */
+  border-radius: 5px; /* Membuat sudut border menjadi melengkung */
+  cursor: pointer; /* Mengubah cursor menjadi tanda tangan saat diarahkan */
+  font-size: medium;
+  font-family: "Quicksand", sans-serif;
+  align-self: center;
+  margin: 10px;
+}
+
+button span {
+  font-weight: bold;
+}
+
+/* Hover effect */
+.btn-submit:hover {
+  background-color: #25c9b3; /* Warna latar belakang saat dihover */
+}
+
+label {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.book_shelf {
+  font-family: "Quicksand", sans-serif;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  overflow: hidden;
+}
+
+.book_shelf > h2 {
+  color: cornflowerblue;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .list-item {
+  padding: 8px 16px 16px 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper .container {
+    width: 100%;
+  }
+
+  .list-item {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
